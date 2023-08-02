@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "b437dbf1-02f3-453f-b25a-4ad63aae3e46",
+		"name": "Customer_API_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find customer by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \r\n    \"first_name\": \"Sophia\",\r\n    \"last_name\": \"Wilson\",\r\n    \"city\": \"Syc\",\r\n    \"company\": \"Ino\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer/findbyid/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"findbyid",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_customer_API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \r\n    \"first_name\": \"Sophia\",\r\n    \"last_name\": \"Wilson\",\r\n    \"city\": \"Sy\",\r\n    \"company\": \"Inno\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer/createcustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"createcustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getALL customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "citywise customer count",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer/sortwisecity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"sortwisecity"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
