@@ -2,6 +2,8 @@ MySql Database is used with Sequelize ORM(Object Relational Mapper)
 
 used PostMan for API testing.
 
+Postman Collection also given for Convenience
+
 
 Post API:- http://localhost:3000/customer/getall   //will give all the customers, by default page will be 1, if you want to see page number 2 post it as JSON in the body e.g {"page": "2"} if given a specific name it will return that specific customer e.g {"first_name": "john"}
 
